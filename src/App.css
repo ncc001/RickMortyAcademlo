@@ -76,7 +76,7 @@ button {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
 	gap: 1rem;
-	align-self: center;
+
 	padding: 2rem;
 	height: auto;
 	background-color: #062226;
@@ -90,6 +90,7 @@ button {
 	flex-direction: column;
 	text-align: start;
 	padding: 1rem;
+	justify-content: center;
 }
 
 .cardresident-container {
