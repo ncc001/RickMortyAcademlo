@@ -1,0 +1,169 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+/* globales */
+body {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	background-color: #05292e;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+ul {
+	padding: 0;
+}
+.hero {
+	height: 55vh;
+	background-image: url(assets/ram.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 2rem;
+}
+
+.form-search {
+	text-align: center;
+	padding: 0 0 2rem 0;
+	margin-top: -10px;
+	width: 100%;
+}
+
+input {
+	background-color: #fff;
+	height: 3rem;
+	color: #05292e;
+	padding: 0 2rem;
+	width: 90%;
+	border: none;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-ms-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+}
+
+button {
+	font-weight: 900;
+
+	height: 3rem;
+	padding: 1rem;
+	border: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #062226;
+	color: #fff;
+}
+
+.wrapper {
+	max-width: 100rem;
+	margin: 0 auto;
+}
+
+.locations-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+	gap: 1rem;
+	align-self: center;
+	padding: 2rem;
+	height: auto;
+	background-color: #062226;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.locations-container div {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	padding: 1rem;
+}
+
+.cardresident-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 32rem), 1fr));
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.cardresident-info {
+	overflow-wrap: break-word;
+	background-color: #062226;
+	width: 100%;
+	font-size: clamp(1rem, 2vw - 1rem, 2rem);
+	overflow-wrap: break-word;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.img-header {
+	min-width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+.cardresident-info span {
+	text-transform: capitalize;
+}
+.status-container {
+	position: absolute;
+	top: 5rem;
+	left: 2.2rem;
+	padding: 0 1rem;
+	background-color: #05292e;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#circle {
+	height: 15px;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.alive {
+	background-color: green;
+}
+
+.dead {
+	background-color: red;
+}
+.unknowm {
+	background-color: grey;
+}
+
+.residents-info {
+	padding: 1rem 2rem;
+	font-weight: bold;
+}
+
+.residents-list {
+	list-style: none;
+}
+
+.residents-list span {
+	color: gray;
+}
+
